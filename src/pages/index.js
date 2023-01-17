@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { useState } from "react";
+import dynamic from "next/dynamic";
+const Navbar = dynamic(() => import("./navbar"));
 
 export default function Home() {
+  const [menu, setmenu] = useState(0);
+  const togglemenu = () => setmenu((state) => !state);
   return (
     <>
       <Head>
@@ -13,7 +15,46 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-indigo-900">hello</div>
+      <Navbar />
+      {/* Hero section  */}
+      <section>
+        <div class="mx-auto max-w-screen-xl px-4 pt-32 lg:flex-col lg:h-screen lg:items-center">
+          <div class="mx-auto max-w-3xl text-center">
+            <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+              Understand User Flow.
+              <span class="sm:block"> Increase Conversion. </span>
+            </h1>
+
+            <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed text-black dark:text-white">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              illo tenetur fuga ducimus numquam ea!
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              <a
+                class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                href="/get-started"
+              >
+                Get Started
+              </a>
+
+              <a
+                class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                href="/about"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+          <img
+            src="/ss.png"
+            className="mt-20 w-5/6 mx-auto rounded-2xl shadow-2xl shadow-indigo-600/50 border border-white/20"
+          />
+          <br />
+          <br />
+          <br />
+        </div>
+      </section>
     </>
   );
 }
