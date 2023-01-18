@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 import dynamic from "next/dynamic";
-const Navbar = dynamic(() => import("./navbar"));
 
 export default function Home() {
   const [menu, setmenu] = useState(0);
@@ -15,31 +15,30 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       {/* Hero section  */}
       <section>
-        <div class="mx-auto max-w-screen-xl px-4 pt-32 lg:flex-col lg:h-screen lg:items-center">
-          <div class="mx-auto max-w-3xl text-center">
-            <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+        <div className="mx-auto max-w-screen-xl px-4 pt-32 lg:flex-col lg:h-screen lg:items-center">
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl lg:text-6xl">
               Understand User Flow.
-              <span class="sm:block"> Increase Conversion. </span>
+              <span className="sm:block"> Increase Conversion. </span>
             </h1>
 
-            <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed text-black dark:text-white">
+            <p className="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed text-black dark:text-white">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
               illo tenetur fuga ducimus numquam ea!
             </p>
 
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
                 href="/get-started"
               >
                 Get Started
               </a>
 
               <a
-                class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
                 href="/about"
               >
                 Learn More
@@ -53,8 +52,124 @@ export default function Home() {
           <br />
           <br />
           <br />
+
+          {/* ----Blog part---- */}
+          <div className="w-full h-full min-h-[40vh] px-8 py-20">
+            <div class="text-center">
+              <h2 class="text-3xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
+                Explore our <code className="lowercase bg-slate-800 rounded-lg px-1">latest</code> blogs
+              </h2>
+
+              <p class="max-w-lg mx-auto mt-4 text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 my-10">
+              <article className="group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
+                <img
+                  alt="Office"
+                  // src={img}
+                  src="https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+                  className="h-56 w-full object-cover rounded-xl border border-black/20 duration-300 group-hover:shadow-xl"
+                />
+                <div>
+                  <a href="#">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white capitalize">
+                      {/* {title} */}
+                      lorem ispum dolor sit amet.
+                    </h3>
+                  </a>
+
+                  <p className="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
+                    {/* {excerpt} */}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                    hic quidem ducimus quas, labore architecto id libero dolore
+                    voluptatum animi beatae ab perferendis commodi tempore?
+                  </p>
+
+                  <Link
+                    // href={"/blog/" + slug}
+                    href={"/blog/singlepage"}
+                    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 bg-blue-100 dark:bg-gray-800 px-4 py-3 rounded-lg"
+                  >
+                    Find out more
+                    <span
+                      aria-hidden="true"
+                      className="block transition group-hover:translate-x-0.5"
+                    >
+                      &rarr;
+                    </span>
+                  </Link>
+                </div>
+              </article>
+              {/* <Card
+              img={
+                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+              }
+              title={"lorem ispum dolor sit amet."}
+              excerpt={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+              }
+              slug={"random-slug"}
+              />
+              <Card
+              img={
+                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+              }
+              title={"lorem ispum dolor sit amet."}
+              excerpt={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+              }
+              slug={"random-slug"}
+              />
+              <Card
+              img={
+                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+              }
+              title={"lorem ispum dolor sit amet."}
+              excerpt={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+              }
+              slug={"random-slug"}
+              />
+              <Card
+              img={
+                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+              }
+              title={"lorem ispum dolor sit amet."}
+              excerpt={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+              }
+              slug={"random-slug"}
+              />
+              <Card
+              img={
+                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+              }
+              title={"lorem ispum dolor sit amet."}
+              excerpt={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+              }
+              slug={"random-slug"}
+              />
+              <Card
+              img={
+                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+              }
+              title={"lorem ispum dolor sit amet."}
+              excerpt={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+              }
+              slug={"random-slug"}
+            /> */}
+            </div>
+          </div>
+          {/* ----Blog part---- */}
         </div>
       </section>
+
+
+      {/* ---------USE A CONTACT FORM AT THE LASTE(HERE) AND ON THE SINGLE BLOG PAGE DONT CREATE ANOTHER CONTACT PAGE INSTEAD CREATE ABOUT US PAGE ---------- */}
     </>
   );
 }
