@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <img
             src="/ss.png"
-            className="mt-20 w-5/6 mx-auto rounded-2xl shadow-2xl shadow-indigo-600/50 border border-white/20"
+            className="mt-20 w-5/6 mx-auto rounded-2xl shadow-2xl transition-all duration-300 ease-in-out hover:shadow-indigo-600/50 border border-white/20"
           />
           <br />
           <br />
