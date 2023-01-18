@@ -6,7 +6,7 @@ const navbar = () => {
       <div className="mx-auto max-w-screen-xl py-2 px-4 sm:px-6 lg:px-8 ">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
-            <a className="block text-indigo-600 dark:text-indigo-600" href="/">
+            <Link className="block text-indigo-600 dark:text-indigo-600" href="/">
               <span className="sr-only">Home</span>
               <svg
                 id="logo-79"
@@ -52,7 +52,7 @@ const navbar = () => {
                   </linearGradient>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="hidden md:block">
             <nav aria-label="Site Nav" className="">
@@ -89,14 +89,14 @@ const navbar = () => {
               <div className="hidden sm:flex">
                 <a
                   className="px-5 py-2.5 text-sm font-medium text-gray-500 dark:text-white hover:!text-gray-300"
-                  href="/"
+                  href="#"
                 >
                   Register
                 </a>
               </div>
               <a
                 className="rounded-full bg-gradient-to-r hover:bg-gradient-to-l from-indigo-600 to-cyan-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-indigo-500"
-                href="/"
+                href="#"
               >
                 Login
               </a>

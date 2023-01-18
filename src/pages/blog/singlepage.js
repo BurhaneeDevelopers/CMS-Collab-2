@@ -100,7 +100,7 @@ const Singlepage = () => {
                     href="#"
                     className="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 "
                   >
-                    Top 10 Blocks you can get on Blox's collection.
+                    Top 10 Blocks you can get on Blox&apos;s collection.
                   </a>
                 </div>
 
@@ -113,7 +113,7 @@ const Singlepage = () => {
                     href="#"
                     className="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 "
                   >
-                    Top 10 Ui kit you can get on Blox's collection.
+                    Top 10 Ui kit you can get on Blox&apos;s collection.
                   </a>
                 </div>
               </div>
