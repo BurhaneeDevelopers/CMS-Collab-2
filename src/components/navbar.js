@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const navbar = () => {
   return (
-    <header aria-label="Site Header" className="ml-20">
+    <header aria-label="Site Header" className="lg:ml-20">
       <div className="mx-auto max-w-screen-xl py-2 px-4 sm:px-6 lg:px-8 ">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">

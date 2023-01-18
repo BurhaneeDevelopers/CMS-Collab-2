@@ -9,8 +9,8 @@ const Singlepage = () => {
             Blogs
           </h1>
         </div>
-        <div className="bg-white dark:bg-gray-900 px-28">
-          <div className="container px-6 py-10 mx-auto">
+        <div className="bg-white dark:bg-gray-900 px-7 sm:px-0 xl:px-28">
+          <div className="container sm:px-6 py-10 mx-auto">
             <div className="lg:flex lg:-mx-6">
               <div className="lg:w-3/4 lg:px-6">
                 <img
@@ -24,11 +24,11 @@ const Singlepage = () => {
                     Want to know
                   </p>
 
-                  <h1 className="max-w-lg mt-4 text-4xl font-semibold leading-tight text-gray-800 dark:text-white">
+                  <h1 className="max-w-lg mt-4 text-3xl xs:text-4xl font-semibold leading-tight text-gray-800 dark:text-white">
                     What do you want to know about UI
                   </h1>
 
-                  <p className="dark:text-white my-3">
+                  <p className="dark:text-white my-3 text-sm xs:text-md">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Quo inventore voluptate facilis quia corporis blanditiis
                     repellendus earum reprehenderit error quas neque eveniet
@@ -122,8 +122,8 @@ const Singlepage = () => {
         </div>
 
         {/* -----Related Blogs----- */}
-        <section className="bg-white dark:bg-gray-900 px-28">
-          <div className="container px-6 py-10 mx-auto">
+        <section className="bg-white dark:bg-gray-900 px-7 sm:px-0 xl:px-28">
+          <div className="container sm:px-6 py-10 mx-auto">
             <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
               Explore our <code className="lowercase bg-slate-800 rounded-md px-1">related</code> blogs
             </h1>

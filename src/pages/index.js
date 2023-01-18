@@ -31,41 +31,38 @@ export default function Home() {
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                className="rounded-full bg-gradient-to-r hover:bg-gradient-to-l from-indigo-600 to-cyan-600 px-10 py-4 text-md font-medium text-white shadow dark:hover:bg-indigo-500"
                 href="/get-started"
               >
                 Get Started
-              </a>
-
-              <a
-                className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-                href="/about"
-              >
-                Learn More
               </a>
             </div>
           </div>
           <img
             src="/ss.png"
-            className="mt-20 w-5/6 mx-auto rounded-2xl shadow-2xl transition-all duration-300 ease-in-out hover:shadow-indigo-600/50 border border-white/20"
+            className="mt-20 sm:w-5/6 mx-auto rounded-2xl shadow-2xl transition-all duration-300 ease-in-out hover:shadow-indigo-600/50 border border-white/20"
           />
+          {/* <br />
           <br />
-          <br />
-          <br />
+          <br /> */}
 
           {/* ----Blog part---- */}
-          <div className="w-full h-full min-h-[40vh] px-8 py-20">
+          <div className="w-full h-full min-h-[40vh] xs:px-8 py-20">
             <div class="text-center">
               <h2 class="text-3xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
-                Explore our <code className="lowercase bg-slate-800 rounded-lg px-1">latest</code> blogs
+                Explore our{" "}
+                <code className="lowercase bg-slate-800 rounded-lg px-1">
+                  latest
+                </code>{" "}
+                blogs
               </h2>
 
               <p class="max-w-lg mx-auto mt-4 text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 my-10">
-              <article className="group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-8 my-10">
+              <article className="group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-4 sm:p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
                 <img
                   alt="Office"
                   // src={img}
@@ -167,7 +164,6 @@ export default function Home() {
           {/* ----Blog part---- */}
         </div>
       </section>
-
 
       {/* ---------USE A CONTACT FORM AT THE LASTE(HERE) AND ON THE SINGLE BLOG PAGE DONT CREATE ANOTHER CONTACT PAGE INSTEAD CREATE ABOUT US PAGE ---------- */}
     </>
