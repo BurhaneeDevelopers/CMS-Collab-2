@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sora;
+}
+
+@layer components {
+  ::-webkit-scrollbar {
+    @apply hidden w-5 bg-[#d1cfcf] dark:bg-[#226];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#0001] dark:bg-[#fff1];
+  }
+
+  body {
+    @apply relative overflow-x-hidden bg-white dark:bg-[#0c101f] h-auto;
+  }
+
+  body::before {
+    @apply w-96 h-96 bg-gradient-to-br from-blue-600/40 to-purple-600/40 fixed rounded-full -left-20 -top-20 blur-3xl -z-50;
+    content: "";
+  }
+
+  body::after {
+    @apply w-96 h-96 bg-gradient-to-br from-pink-600/40 to-indigo-600/40 fixed rounded-full -right-20 top-40 blur-3xl -z-50;
+    content: "";
+  }
+}
