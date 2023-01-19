@@ -192,7 +192,7 @@ export default function Home() {
 
             <form
               action=""
-              class="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl hover:shadow-indigo-600/30 duration-300"
+              class="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl hover:shadow-indigo-600/10 duration-300"
             >
               <p class="text-lg font-medium text-gray-100">
                 Sign in to your account
@@ -207,7 +207,7 @@ export default function Home() {
                   <input
                     type="email"
                     id="email"
-                    class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
+                    class="w-full rounded-lg border border-gray-300 p-4 pr-12 text-sm shadow-sm bg-transparent"
                     placeholder="Enter email"
                   />
 
@@ -239,7 +239,7 @@ export default function Home() {
                   <input
                     type="password"
                     id="password"
-                    class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
+                    class="w-full rounded-lg border border-gray-300 p-4 pr-12 text-sm shadow-sm bg-transparent"
                     placeholder="Enter password"
                   />
 
