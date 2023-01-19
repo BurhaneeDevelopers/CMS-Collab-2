@@ -12,8 +12,7 @@
 
 @layer components {
   ::-webkit-scrollbar {
-    width: 5px;
-    @apply bg-[#d1cfcf] dark:bg-[#12172b];
+    @apply hidden w-5 bg-[#d1cfcf] dark:bg-[#226];
   }
 
   ::-webkit-scrollbar-thumb {

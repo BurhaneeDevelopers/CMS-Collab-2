@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import Card from "@/components/Card";
 
 export default function Home() {
   const [menu, setmenu] = useState(0);
@@ -17,7 +18,7 @@ export default function Home() {
       </Head>
       {/* Hero section  */}
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 pt-32 lg:flex-col lg:h-screen lg:items-center">
+        <div className="mx-auto max-w-screen-xl px-4 pt-32 lg:flex-col lg:items-center">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl lg:text-6xl">
               Understand User Flow.
@@ -51,7 +52,7 @@ export default function Home() {
             <div class="text-center">
               <h2 class="text-3xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
                 Explore our{" "}
-                <code className="lowercase bg-slate-800 rounded-lg px-1">
+                <code className="lowercase bg-slate-300 dark:bg-slate-800 rounded-lg px-1">
                   latest
                 </code>{" "}
                 blogs
@@ -61,110 +62,142 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-8 my-10">
-              <article className="group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-4 sm:p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
-                <img
-                  alt="Office"
-                  // src={img}
-                  src="https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-                  className="h-56 w-full object-cover rounded-xl border border-black/20 duration-300 group-hover:shadow-xl"
-                />
-                <div>
-                  <a href="#">
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white capitalize">
-                      {/* {title} */}
-                      lorem ispum dolor sit amet.
-                    </h3>
-                  </a>
-
-                  <p className="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
-                    {/* {excerpt} */}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    hic quidem ducimus quas, labore architecto id libero dolore
-                    voluptatum animi beatae ab perferendis commodi tempore?
-                  </p>
-
-                  <Link
-                    // href={"/blog/" + slug}
-                    href={"/blog/singlepage"}
-                    className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 bg-blue-100 dark:bg-gray-800 px-4 py-3 rounded-lg"
-                  >
-                    Find out more
-                    <span
-                      aria-hidden="true"
-                      className="block transition group-hover:translate-x-0.5"
-                    >
-                      &rarr;
-                    </span>
-                  </Link>
-                </div>
-              </article>
-              {/* <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-8 my-10 pb-10">
+              <Card
+                img={
+                  "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+                }
+                title={"lorem ispum dolor sit amet."}
+                excerpt={
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+                }
+                slug={"random-slug"}
               />
               <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
+                img={
+                  "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+                }
+                title={"lorem ispum dolor sit amet."}
+                excerpt={
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+                }
+                slug={"random-slug"}
               />
               <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
+                img={
+                  "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
+                }
+                title={"lorem ispum dolor sit amet."}
+                excerpt={
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
+                }
+                slug={"random-slug"}
               />
-              <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-              />
-              <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-              />
-              <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-            /> */}
             </div>
           </div>
           {/* ----Blog part---- */}
         </div>
       </section>
+      {/* Contact form part  */}
+      <div class="relative flex flex-wrap lg:h-screen lg:items-center mb-8 p-2">
+        <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+          <div class="mx-auto max-w-lg text-center">
+            <h1 class="text-2xl font-bold sm:text-3xl text-black dark:text-white">
+              Get started today!
+            </h1>
 
+            <p class="mt-4 text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero
+              nulla eaque error neque ipsa culpa autem, at itaque nostrum!
+            </p>
+          </div>
+
+          <form class="mx-auto mt-8 mb-0 max-w-md space-y-4">
+            <div>
+              <label for="email" class="sr-only">
+                Email
+              </label>
+
+              <div class="relative">
+                <input
+                  type="email"
+                  class="w-full rounded-lg border border-gray-200 dark:border-gray-800 p-4 pr-12 text-sm shadow-sm bg-transparent"
+                  placeholder="Enter email"
+                />
+
+                <span class="absolute inset-y-0 right-4 inline-flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <label for="Name" class="sr-only">
+                Name
+              </label>
+              <div class="relative">
+                <input
+                  type="Name"
+                  class="w-full rounded-lg border border-gray-200 dark:border-gray-800 p-4 pr-12 text-sm shadow-sm  bg-transparent"
+                  placeholder="Enter Name"
+                />
+
+                <span class="absolute inset-y-0 right-4 inline-flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <button
+                type="submit"
+                class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+              >
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
+          <img
+            alt="Welcome"
+            src="https://images.unsplash.com/photo-1630450202872-e0829c9d6172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            class="absolute inset-0 h-full w-full object-cover rounded-xl"
+          />
+        </div>
+      </div>
       {/* ---------USE A CONTACT FORM AT THE LASTE(HERE) AND ON THE SINGLE BLOG PAGE DONT CREATE ANOTHER CONTACT PAGE INSTEAD CREATE ABOUT US PAGE ---------- */}
     </>
   );

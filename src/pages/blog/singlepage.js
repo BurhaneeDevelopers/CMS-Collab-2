@@ -5,9 +5,7 @@ const Singlepage = () => {
     <>
       <section>
         <div className="w-full flex items-center justify-center h-[50vh] mb-10">
-          <h1 className="text-5xl dark:text-white font-bold">
-            Blogs
-          </h1>
+          <h1 className="text-5xl dark:text-white font-bold">Blogs</h1>
         </div>
         <div className="bg-white dark:bg-gray-900 px-7 sm:px-0 xl:px-28">
           <div className="container sm:px-6 py-10 mx-auto">
@@ -64,7 +62,9 @@ const Singlepage = () => {
               </div>
 
               <div className="mt-8 lg:w-1/4 lg:mt-0 lg:px-6">
-                <h2 className="text-gray-100 capitalize text-2xl mb-5 border-b border-white w-1/2">Key Points:</h2>
+                <h2 className="text-gray-100 capitalize text-2xl mb-5 border-b border-white w-1/2">
+                  Key Points:
+                </h2>
                 <div>
                   <h3 className="text-blue-500 capitalize">Design instument</h3>
 
@@ -125,7 +125,11 @@ const Singlepage = () => {
         <section className="bg-white dark:bg-gray-900 px-7 sm:px-0 xl:px-28">
           <div className="container sm:px-6 py-10 mx-auto">
             <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
-              Explore our <code className="lowercase bg-slate-800 rounded-md px-1">related</code> blogs
+              Explore our{" "}
+              <code className="lowercase bg-slate-800 rounded-md px-1">
+                related
+              </code>{" "}
+              blogs
             </h1>
 
             <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
@@ -259,7 +263,105 @@ const Singlepage = () => {
         </section>
         {/* -----Related Blogs----- */}
       </section>
+      <div class="relative flex flex-wrap lg:h-screen lg:items-center mb-8 p-2">
+        <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+          <div class="mx-auto max-w-lg text-center">
+            <h1 class="text-2xl font-bold sm:text-3xl text-black dark:text-white">
+              Get started today!
+            </h1>
 
+            <p class="mt-4 text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero
+              nulla eaque error neque ipsa culpa autem, at itaque nostrum!
+            </p>
+          </div>
+
+          <form class="mx-auto mt-8 mb-0 max-w-md space-y-4">
+            <div>
+              <label for="email" class="sr-only">
+                Email
+              </label>
+
+              <div class="relative">
+                <input
+                  type="email"
+                  class="w-full rounded-lg border border-gray-200 dark:border-gray-800 p-4 pr-12 text-sm shadow-sm bg-transparent"
+                  placeholder="Enter email"
+                />
+
+                <span class="absolute inset-y-0 right-4 inline-flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <label for="Name" class="sr-only">
+                Name
+              </label>
+              <div class="relative">
+                <input
+                  type="Name"
+                  class="w-full rounded-lg border border-gray-200 dark:border-gray-800 p-4 pr-12 text-sm shadow-sm  bg-transparent"
+                  placeholder="Enter Name"
+                />
+
+                <span class="absolute inset-y-0 right-4 inline-flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <button
+                type="submit"
+                class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+              >
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
+          <img
+            alt="Welcome"
+            src="https://images.unsplash.com/photo-1630450202872-e0829c9d6172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            class="absolute inset-0 h-full w-full object-cover rounded-xl"
+          />
+        </div>
+      </div>
       {/* ---------USE A CONTACT FORM AT THE LAST(HERE) AND ON THE HOME PAGE DONT CREATE ANOTHER CONTACT PAGE INSTEAD CREATE ABOUT US PAGE ---------- */}
     </>
   );

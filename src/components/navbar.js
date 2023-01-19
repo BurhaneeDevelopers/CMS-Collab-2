@@ -2,11 +2,14 @@ import Link from "next/link";
 
 const navbar = () => {
   return (
-    <header aria-label="Site Header" className="lg:ml-20">
-      <div className="mx-auto max-w-screen-xl py-2 px-4 sm:px-6 lg:px-8 ">
+    <header aria-label="Site Header">
+      <div className="mx-auto py-2 px-4 sm:px-6 lg:px-8 ">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
-            <Link className="block text-indigo-600 dark:text-indigo-600" href="/">
+            <Link
+              className="block text-indigo-600 dark:text-indigo-600"
+              href="/"
+            >
               <span className="sr-only">Home</span>
               <svg
                 id="logo-79"

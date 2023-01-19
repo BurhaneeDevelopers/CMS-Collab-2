@@ -1,4 +1,4 @@
-const card = ({ img, title, excerpt, slug }) => {
+const Card = ({ img, title, excerpt, slug }) => {
   return (
     <article className="group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
       <img
@@ -34,4 +34,4 @@ const card = ({ img, title, excerpt, slug }) => {
   );
 };
 
-export default card;
+export default Card;
