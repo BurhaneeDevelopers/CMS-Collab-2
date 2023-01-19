@@ -5,6 +5,7 @@ const Blog = () => {
   return (
     <>
       <div>
+        {/* ----BreadCrumb---- */}
         <div className="w-full flex items-center justify-center h-[50vh]">
           <h1 className="text-5xl dark:text-white font-bold">
             Blogs
@@ -12,6 +13,7 @@ const Blog = () => {
             <br />
           </h1>
         </div>
+        {/* ----BreadCrumb---- */}
         <div className="bg-white dark:bg-gray-800 w-full h-full min-h-[40vh] px-2 xs:px-8 md:px-10 lg:px-32 py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             <article className="xsm:w-96 mx-auto md:w-full group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
