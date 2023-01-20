@@ -458,7 +458,7 @@ const Slug = ({ blog }) => {
           </div>
         </div>
       </section>
-      {/* ---contact-form--- */}
+      {/* ----contact-form---- */}
     </>
   );
 };
