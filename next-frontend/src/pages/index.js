@@ -59,7 +59,7 @@ export default function Home({ blogs }) {
           />
 
           {/* ----Blog part---- */}
-          <div className="w-full h-full min-h-[40vh] py-20">
+          <div className="w-full h-full min-h-[40vh] py-20 mt-10">
             <div class="text-center">
               <h2 class="text-3xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
                 Explore our{" "}
@@ -74,7 +74,7 @@ export default function Home({ blogs }) {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-10">
               {blogs.map((item) => {
                 return (
                   <div key={item.slug.current}>
