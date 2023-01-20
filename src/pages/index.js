@@ -22,7 +22,10 @@ export default function Home({ blogs }) {
     <>
       <Head>
         <title>Blogilicious</title>
-        <meta name="description" content="Blog Created by Mustryy.com and Taheridevelopers" />
+        <meta
+          name="description"
+          content="Blog Created by Mustryy.com and Taheridevelopers"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -56,7 +59,7 @@ export default function Home({ blogs }) {
           />
 
           {/* ----Blog part---- */}
-          <div className="w-full h-full min-h-[40vh] xs:px-8 py-20">
+          <div className="w-full h-full min-h-[40vh] py-20 mt-10">
             <div class="text-center">
               <h2 class="text-3xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
                 Explore our{" "}
@@ -71,17 +74,17 @@ export default function Home({ blogs }) {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-8 my-10 pb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-10">
               {blogs.map((item) => {
                 return (
                   <div key={item.slug.current}>
-                    <article className="xsm:w-96 mx-auto md:w-full group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
+                    <article className="xsm:w-96 mx-auto md:w-full group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300 ">
                       <div
-                        className="h-56 w-full bg-contain rounded-xl border border-black/20 duration-300 group-hover:shadow-xl"
+                        className="h-56 w-full bg-cover rounded-xl border border-black/20 duration-300 group-hover:shadow-xl bg-no-repeat bg-center"
                         style={{
                           backgroundImage: `url(${builder
                             .image(item.blogimage)
-                            .width(500)
+                            .width(1000)
                             .url()})`,
                         }}
                       ></div>

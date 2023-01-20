@@ -23,7 +23,7 @@ const Slug = ({ blog }) => {
             <div className="lg:flex lg:-mx-6">
               <div className="lg:w-3/4 lg:px-6">
                 <div
-                  className="bg-cover bg-center w-full h-80 xl:h-[28rem] rounded-xl"
+                  className="bg-cover bg-center w-full h-80 xl:h-[28rem] rounded-xl bg-no-repeat"
                   style={{
                     backgroundImage: `url(${builder
                       .image(blog.blogimage)
@@ -50,10 +50,11 @@ const Slug = ({ blog }) => {
                       h1: (props) => (
                         <h1
                           style={{
-                            marginTop: "1rem ",
+                            marginTop: "0.5rem ",
                             marginBottom: "0.1rem",
                             fontSize: "2.3rem",
                             fontWeight: "bold",
+                            lineHeight: "3.5rem",
                           }}
                           {...props}
                         />
@@ -61,10 +62,11 @@ const Slug = ({ blog }) => {
                       h2: (props) => (
                         <h2
                           style={{
-                            marginTop: "1rem ",
+                            marginTop: "0.5rem ",
                             marginBottom: "0.1rem",
                             fontSize: "1.9rem",
                             fontWeight: "bold",
+                            lineHeight: "3.5rem",
                           }}
                           {...props}
                         />
@@ -72,10 +74,11 @@ const Slug = ({ blog }) => {
                       h3: (props) => (
                         <h3
                           style={{
-                            marginTop: "1rem",
+                            marginTop: "0.5rem",
                             marginBottom: "0.1rem",
                             fontSize: "1.6rem",
                             fontWeight: "bold",
+                            lineHeight: "3.5rem",
                           }}
                           {...props}
                         />
@@ -83,10 +86,11 @@ const Slug = ({ blog }) => {
                       h4: (props) => (
                         <h4
                           style={{
-                            marginTop: "1rem ",
+                            marginTop: "0.5rem ",
                             marginBottom: "0.1rem",
                             fontSize: "1.4rem",
                             fontWeight: "bold",
+                            lineHeight: "3.5rem",
                           }}
                           {...props}
                         />
@@ -94,10 +98,11 @@ const Slug = ({ blog }) => {
                       h5: (props) => (
                         <h5
                           style={{
-                            marginTop: "1rem ",
+                            marginTop: "0.5rem ",
                             marginBottom: "0.1rem",
                             fontSize: "1.2rem",
                             fontWeight: "bold",
+                            lineHeight: "3.5rem",
                           }}
                           {...props}
                         />
@@ -105,10 +110,11 @@ const Slug = ({ blog }) => {
                       h6: (props) => (
                         <h6
                           style={{
-                            marginTop: "1rem ",
+                            marginTop: "0.5rem ",
                             marginBottom: "0.1rem",
                             fontSize: "1rem",
                             fontWeight: "bold",
+                            lineHeight: "3.5rem",
                           }}
                           {...props}
                         />
