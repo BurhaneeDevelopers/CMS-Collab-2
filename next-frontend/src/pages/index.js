@@ -84,7 +84,7 @@ export default function Home({ blogs }) {
                         style={{
                           backgroundImage: `url(${builder
                             .image(item.blogimage)
-                            .width(500)
+                            .width(1000)
                             .url()})`,
                         }}
                       ></div>
