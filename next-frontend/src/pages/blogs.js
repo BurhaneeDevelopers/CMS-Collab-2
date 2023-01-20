@@ -31,9 +31,9 @@ const Blog = ({ blogs }) => {
             {blogs.map((item) => {
               return (
                 <div key={item.slug.current}>
-                  <article className="xsm:w-96 mx-auto md:w-full group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
+                  <article className="xsm:w-96 mx-auto md:w-full group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300 ">
                     <div
-                      className="h-56 w-full bg-contain rounded-xl border border-black/20 duration-300 group-hover:shadow-xl"
+                      className="h-56 w-full bg-cover rounded-xl border border-black/20 duration-300 group-hover:shadow-xl bg-no-repeat bg-center"
                       style={{
                         backgroundImage: `url(${builder
                           .image(item.blogimage)
