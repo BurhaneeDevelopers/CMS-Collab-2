@@ -16,23 +16,18 @@ const Slug = ({ blog }) => {
     <>
       <section>
         <div className="w-full flex items-center justify-center h-[50vh] mb-10">
-          <h1 className="text-5xl dark:text-white font-bold">Blogs</h1>
+          <h1 className="text-5xl dark:text-white font-bold">{blog.title}</h1>
         </div>
         <div className="bg-white dark:bg-gray-900 px-7 sm:px-0 xl:px-28">
           <div className="container sm:px-6 py-10 mx-auto">
             <div className="lg:flex lg:-mx-6">
               <div className="lg:w-3/4 lg:px-6">
-                {/* <img
-                  className="object-cover object-center w-full h-80 xl:h-[28rem] rounded-xl"
-                  src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                  alt=""
-                /> */}
                 <div
                   className="bg-cover bg-center w-full h-80 xl:h-[28rem] rounded-xl"
                   style={{
                     backgroundImage: `url(${builder
                       .image(blog.blogimage)
-                      .width(500)
+                      .width(2000)
                       .url()})`,
                   }}
                 ></div>
@@ -464,7 +459,6 @@ const Slug = ({ blog }) => {
         </div>
       </section>
       {/* ---contact-form--- */}
-      {/* ---------USE A CONTACT FORM AT THE LAST(HERE) AND ON THE HOME PAGE DONT CREATE ANOTHER CONTACT PAGE INSTEAD CREATE ABOUT US PAGE ---------- */}
     </>
   );
 };

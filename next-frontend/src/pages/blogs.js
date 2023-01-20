@@ -32,12 +32,6 @@ const Blog = ({ blogs }) => {
               return (
                 <div key={item.slug.current}>
                   <article className="xsm:w-96 mx-auto md:w-full group cursor-pointer bg-gray-200 dark:bg-gray-900 overflow-hidden rounded-2xl border border-gray-300 dark:border-gray-100/10 shadow-2xl shadow-gray-700/10 p-5 pb-8 space-y-4 hover:shadow-3xl hover:shadow-indigo-600/30 duration-300">
-                    {/* <img
-                        alt="Office"
-                        // src={img}
-                        src="https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-                        className="h-56 w-full object-cover rounded-xl border border-black/20 duration-300 group-hover:shadow-xl"
-                      /> */}
                     <div
                       className="h-56 w-full bg-contain rounded-xl border border-black/20 duration-300 group-hover:shadow-xl"
                       style={{
@@ -83,66 +77,6 @@ const Blog = ({ blogs }) => {
                 </div>
               );
             })}
-            {/* <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-            />
-            <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-            />
-            <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-            />
-            <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-            />
-            <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-            />
-            <Card
-              img={
-                "https://static.toiimg.com/photo/msid-95397427,width-96,height-65.cms"
-              }
-              title={"lorem ispum dolor sit amet."}
-              excerpt={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic quidem ducimus quas, labore architecto id libero dolore voluptatum animi beatae ab perferendis commodi tempore?"
-              }
-              slug={"random-slug"}
-            /> */}
           </div>
         </div>
       </div>
